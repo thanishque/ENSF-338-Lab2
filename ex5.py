@@ -80,3 +80,13 @@ plt.plot(vector_sizes, log_func(np.array(vector_sizes), *params_log), 'r--', lab
 plt.legend()
 plt.tight_layout()
 plt.show()
+
+# The results for each interpolating function are as expected as linear seach returns a linear graph
+# that extends as the items in the array extend according to the complexity o(n.)
+# The binary search returns an appropriate logarithmic graph as well which has complexity
+# o(log(n)) because it takes a divide and conquer approach it has a less drastic increase in time
+# with the increase in number of elements in the array compared to linear search.
+# The parameters of the linear function are: 
+# a is slope indicating rate of increase in time with complexityand b is the y intercept showing base time
+# In logarithmic graph a is the scaling factor influencing rate and b is same as above. 
+#  Therefore, the expected result is returned as the experimental time complexity matches theoretical. 
